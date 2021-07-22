@@ -1,0 +1,204 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #222;
+    opacity: 0.8
+    
+}
+
+.container{
+    margin-top: 2em;
+    border: 2px solid cyan;
+    height: 90vh;
+    width: 80vw;
+    position: relative;
+    background: url(images/sunset3.jpg);
+    background-repeat: no-repeat;
+    background-size: 110%;
+    overflow: hidden;
+    box-shadow: 0 0 20px 10px;
+}
+.mar{
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    
+    background: #0097e6;
+    box-shadow: 0px 11px 6px 5px rgba( 34, 145, 220, 0.9);
+}
+.playa{
+    width: 100%;
+    height: 12vh;
+    position: absolute;
+    bottom: 25%;
+    background: #feca57    ;
+}
+.van{
+    left: 20%;   
+    bottom: 3%;
+    position: absolute;
+    z-index: 5;
+    animation: susp .4s ease-in-out infinite;
+    animation-direction: alternate;
+   
+    
+        
+}
+.vereda{
+    position: absolute;
+    bottom: 20%;
+    background: #666;
+    width: 100%;
+    height: 3%;
+    border-bottom: 15px solid #555;
+    display: flex;
+   
+    
+        
+}
+.baldcon{
+position: relative;  
+width: 100%;  
+     box-shadow: 0px 12px 15px 0px rgba(0,0,0, 0.5);
+}
+
+.bald{
+    width: 20%;
+    height: 96%;
+    border: 1px solid #222;
+     transform: skewX(-30deg);
+    position: absolute;
+ box-shadow: inset -10px 30px 15px -15px rgba(0,0,0, 0.3);
+    animation: moveRight 1s linear infinite;
+    
+   
+   
+}
+.a{
+    left: 0%;
+}
+.b{
+    left: 20%;
+}
+.c{
+    left: 40%;
+}
+.d{
+    left: 60%;
+}
+.e{
+    left: 80%;
+}
+.f{
+    left: 100%;
+}
+
+
+.piso{
+    width: 100%;
+    height: 20%;
+    background: #222;
+    position: absolute;
+    bottom: 0%;
+    box-shadow: inset -10px 30px 15px -15px rgba(0,0,0, 0.4)
+   
+}
+.line1{
+    position: absolute;
+    border: 2px solid #CCC;
+    height: 1vh;
+    width: 10%;
+    left: 0%;
+    bottom: 30%;
+    background: #CCC;
+    transform: skewX(-30deg);
+    border-radius: 3px;
+     animation: linemoveRight 1s linear infinite;
+    
+}
+.line2{
+    position: absolute;
+    border: 2px solid #CCC;
+    height: 1vh;
+    width: 10%;
+    left: 20%;
+    bottom: 30%;
+    background: #CCC;
+     transform: skewX(-30deg);
+    border-radius: 3px;
+      animation: linemoveRight 1s linear infinite;
+        
+}
+.line3{
+    position: absolute;
+    border: 2px solid #CCC;
+    height: 1vh;
+    width: 10%;
+    left: 40%;
+    bottom: 30%;
+    background: #CCC;
+     transform: skewX(-30deg);
+    border-radius: 3px;
+     animation: linemoveRight 1s linear infinite;
+}
+.line4{
+    position: absolute;
+    border: 2px solid #CCC;
+    height: 1vh;
+    width: 10%;
+    left: 60%;
+    bottom: 30%;
+    background: #CCC;
+     transform: skewX(-30deg);
+    border-radius: 3px;
+     animation: linemoveRight 1s linear infinite;
+}
+.line5{
+    position: absolute;
+    border: 2px solid #CCC;
+    height: 1vh;
+    width: 10%;
+    left: 80%;
+    bottom: 30%;
+    background: #CCC;
+     transform: skewX(-30deg);
+    border-radius: 3px;
+     animation: linemoveRight 1s linear infinite;
+}
+.line6{
+    position: absolute;
+    border: 2px solid #CCC;
+    height: 1vh;
+    width: 10%;
+    left: 100%;
+    bottom: 30%;
+    background: #CCC;
+     transform: skewX(-30deg);
+    border-radius: 3px;
+     animation: linemoveRight 1s linear infinite;
+}
+
+@keyframes moveRight{
+    100%{ transform: translateX(-99%)  skewX(-30deg);
+       
+    }
+}@keyframes linemoveRight{
+    100%{ transform: translateX(-194%)  skewX(-30deg);
+       
+    }
+}
+@keyframes susp{
+    0%{
+        transform: translateY(-1px);
+        
+         
+    }
+    50%{
+       
+    }
+    100%{
+        transform: translateY(1px);
+         
+    }
+}
